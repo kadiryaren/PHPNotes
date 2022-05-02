@@ -249,6 +249,16 @@ We will use PDO class for connect to database.
 	$query  =  $db->prepare("select * from users where id=1")->fetch(PDO::FETCH_ASSOC);
 	$query-> execute();
 	echo  $query['id'];
+	
+	// for multiple rows 
+	
+	$q = "SELECT * FROM users";
+	$stmt = $conn->prepare( $q );
+	$stmt->execute();
+	echo '<ul>';
+	while( $row = $stmt->fetch() ) {
+		echo '<li>' . $row['first_name'] . '</li>';
+	}
 
 ```
 
