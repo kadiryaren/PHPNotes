@@ -360,6 +360,13 @@ We will use PDO class for connect to database.
 
 
 ```
+## PHP JSON API BE CAREFUL TO HEADER
+```php
+
+ 	header("Access-Control-Allow-Headers: *");
+    	header("Access-Control-Allow-Origin: *");
+
+```
 
 
  
