@@ -365,6 +365,7 @@ We will use PDO class for connect to database.
 
  	header("Access-Control-Allow-Headers: *");
     	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
 
 ```
 
